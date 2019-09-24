@@ -27,7 +27,7 @@
     <input type="email" name="email" id="email" placeholder="your email" required>
 
     <label for="password">Password:</label>
-    <input type="password" name="password" id="password" placeholder="your password" required minlength="5" maxlength="10">
+    <input type="password" name="password" id="password" placeholder="your password" required pattern=".{5.10}" title="Password must be between 5 to 10 characters">
 
     <fieldset>
       <legend>
@@ -94,7 +94,7 @@
     </fieldset>
 
     <label for="termsAndConditions">I agree to the terms and conditions</label>
-    <input type="checkbox" name="termsAndConditions" id="termsAndConditions">
+    <input type="checkbox" name="termsAndConditions" id="termsAndConditions" value="agreed">
 
     <br>
 
